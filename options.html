@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VoipMonitor Extension Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    label { display: block; margin-top: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h2>VoipMonitor Extension Settings</h2>
+
+  <label>Target Page URL</label>
+  <input id="url" type="text" placeholder="https://yourdomain.com/payment" />
+
+  <label>Card Field Names/IDs (comma-separated)</label>
+  <input id="fields" type="text" placeholder="cardnumber,ccnum" />
+
+  <label>VoipMonitor API URL</label>
+  <input id="apiUrl" type="text" placeholder="https://your-voipmonitor.com/api/json.php" />
+
+  <label>API User</label>
+  <input id="user" type="text" placeholder="admin" />
+
+  <label>API Password</label>
+  <input id="password" type="password" placeholder="password" />
+
+  <label>Sensor ID</label>
+  <input id="sensorId" type="text" placeholder="1" />
+
+  <label>Extension (caller or called)</label>
+  <input id="extension" type="text" placeholder="11790" />
+
+  <label>Pause Duration (in seconds)</label>
+  <input id="pauseDuration" type="number" placeholder="10" />
+
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
